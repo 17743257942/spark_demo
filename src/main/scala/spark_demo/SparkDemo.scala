@@ -29,6 +29,8 @@ object SparkDemo {
     /* 使用makeRDD创建RDD */
     /* List */
     val rdd01 = sc.makeRDD(List(1, 2, 3, 4, 5, 6))
+    println(rdd01.count())
+    println(rdd01.min())
     val r01 = rdd01.map { x => x * x }
     println(r01.collect().mkString(","))
     /* Array */
