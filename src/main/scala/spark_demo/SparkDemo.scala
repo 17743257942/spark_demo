@@ -1,5 +1,6 @@
 package spark_demo
 
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 object SparkDemo {
@@ -44,6 +45,7 @@ object SparkDemo {
     println()
     println()
 
+    /**
     val rdd2 = rdd.flatMap(_.split(" "))
     println(rdd2.collect().mkString(","))  //hello,world,hello,my,world,hello,world,of,mine,hello,worlds
     val rdd3 = rdd.map(_.split(" "))
@@ -68,6 +70,51 @@ object SparkDemo {
     val rdd04 = sc.parallelize(List(1, 2, 3, 4, 5, 6), 1)
     val r04 = rdd04.filter { x => x > 3 }
     println(r04.collect().mkString(","))
+
+
+
+
+    val rddInt:RDD[Int] = sc.makeRDD(List(1,2,3,4,5,6,2,5,1))
+    val rddStr:RDD[String] = sc.parallelize(Array("a","b","c","d","b","a"), 1)
+    val rddFile:RDD[String] = sc.textFile(logFile, 1)
+
+    val rdd01:RDD[Int] = sc.makeRDD(List(1,3,5,3))
+    val rdd02:RDD[Int] = sc.makeRDD(List(2,4,5,1))
+    /* map操作 */
+    println("======map操作======")
+    println(rddInt.map(x => x + 1).collect().mkString(","))
+    /* filter操作 */
+    println("======filter操作======")
+    println(rddInt.filter(x => x > 4).collect().mkString(","))
+    /* flatMap操作 */
+    println("======flatMap操作======")
+    println(rddFile.flatMap { x => x.split(" ") }.first())
+    /* distinct去重操作 */
+    println("======distinct去重======")
+    println(rddInt.distinct().collect().mkString(","))
+    println(rddStr.distinct().collect().mkString(","))
+    /* union操作 */
+    println("======union操作======")
+    println(rdd01.union(rdd02).collect().mkString(","))
+    /* intersection操作 */
+    println("======intersection操作======")
+    println(rdd01.intersection(rdd02).collect().mkString(","))
+    /* subtract操作 */
+    println("======subtract操作======")
+    println(rdd01.subtract(rdd02).collect().mkString(","))
+    /* cartesian操作 */
+    println("======cartesian操作======")
+    println(rdd01.cartesian(rdd02).collect().mkString(","))
+      */
+
+    val sparkdata01=  this.getClass().getResource("sparkdata01.txt").toString.substring(6)
+    val rddFile:RDD[(String,String)] = sc.textFile(sparkdata01, 1)
+      .map { x => (x.split(",")(0),x.split(",")(1) + "," + x.split(",")(2)) }
+    val rFile:RDD[String] = rddFile.keys
+    println("=========createPairMap File=========")
+    println(rFile.collect().mkString(","))// x01,x02,x01,x01,x02,x03
+    println("=========createPairMap File=========")
+
 
 
   }
