@@ -13,6 +13,7 @@ object SparkDemo {
     println("create my first SparkContext ----------")
 
     val rdd = sc.textFile(logFile)
+
     /**
       * 第一种wc
       */
@@ -26,21 +27,24 @@ object SparkDemo {
     /**
       * 第二种wc
       */
-    val lines = rdd.flatMap(line=>line.split(" "))
-    val count = lines.map(word => (word,1)).reduceByKey{case (x,y)=>x+y}
-    count.saveAsTextFile("E:\\Program Files\\vm_linux\\share\\aaout2.txt")
+    val lines = rdd.flatMap(line => line.split(" "))
+    val count1 = lines.map(word => (word, 1))
+    println(count1.collect().mkString(","))
+    val count2 = count1.reduceByKey { case (x, y) => x + y }
+    println(count2.collect().mkString(","))
+    //    count.saveAsTextFile("E:\\Program Files\\vm_linux\\share\\aaout2.txt")
 
 
     val rdd2 = rdd.flatMap(_.split(" "))
-    println(rdd2.collect().mkString(","))
-    val rdd3=rdd.map(_.split(" "))
-    println(rdd3.first())
-    println(rdd3.count())
+    println(rdd2.collect().mkString(","))  //hello,world,hello,my,world,hello,world,of,mine,hello,worlds
+    val rdd3 = rdd.map(_.split(" "))
+    println(rdd3.first()) // [Ljava.lang.String;@3f3c96
+    println(rdd3.count()) // 4
     /* 使用makeRDD创建RDD */
     /* List */
     val rdd01 = sc.makeRDD(List(1, 2, 3, 4, 5, 6))
-    println(rdd01.count())
-    println(rdd01.min())
+    println(rdd01.count()) //6
+    println(rdd01.min()) //1
     val r01 = rdd01.map { x => x * x }
     println(r01.collect().mkString(","))
     /* Array */
