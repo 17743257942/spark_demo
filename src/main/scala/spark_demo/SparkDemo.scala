@@ -110,10 +110,12 @@ object SparkDemo {
     val sparkdata01=  this.getClass().getResource("sparkdata01.txt").toString.substring(6)
     val rddFile:RDD[(String,String)] = sc.textFile(sparkdata01, 1)
       .map { x => (x.split(",")(0),x.split(",")(1) + "," + x.split(",")(2)) }
+    println(rddFile.collect().mkString(","))
     val rFile:RDD[String] = rddFile.keys
+    val rFile2:RDD[String] = rddFile.values
     println("=========createPairMap File=========")
     println(rFile.collect().mkString(","))// x01,x02,x01,x01,x02,x03
-    println("=========createPairMap File=========")
+    println(rFile2.collect().mkString("  "))//
 
 
 
