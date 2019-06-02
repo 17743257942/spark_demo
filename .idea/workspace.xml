@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b8b6d31-b721-4aa7-b464-e265873a5cb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,20 +49,38 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/Demo.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="374">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/Demo.scala">
+        <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/RDD.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="6798">
+              <caret line="369" column="6" selection-start-line="369" selection-start-column="6" selection-end-line="369" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="48" column="38" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -71,6 +90,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>set</find>
+      <find>parallelize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,7 +177,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559382519624" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559386631187" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scala_demo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4610984" />
@@ -263,6 +284,14 @@
       <option name="presentableId" value="Default" />
       <updated>1558772311126</updated>
     </task>
+    <task id="LOCAL-00001" summary="asdf">
+      <created>1559382583399</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559382583399</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -278,7 +307,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -296,6 +325,10 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -346,38 +379,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="324" column="6" selection-start-line="324" selection-start-column="6" selection-end-line="324" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/SparkContext.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="713" column="6" selection-start-line="713" selection-start-column="6" selection-end-line="713" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/HelloWorld.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/Program Files/maven_repo/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/Predef.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="104" column="6" selection-start-line="104" selection-start-column="6" selection-end-line="104" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/Demo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -409,13 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/RDD.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="943" column="22" selection-start-line="943" selection-start-column="17" selection-end-line="943" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88">
@@ -430,10 +428,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/HelloWorld.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/Demo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/SparkContext.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="716" column="22" lean-forward="true" selection-start-line="716" selection-start-column="22" selection-end-line="716" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/scheduler/TaskScheduler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/RDD.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6798">
+          <caret line="369" column="6" selection-start-line="369" selection-start-column="6" selection-end-line="369" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="60" />
         </state>
       </provider>
     </entry>
