@@ -28,11 +28,12 @@ object SparkDemo {
       * 第二种wc
       */
     val lines = rdd.flatMap(line => line.split(" "))
-    val count1 = lines.map(word => (word, 1))
+    val count1 = lines.map(word => (word, 1)) // 使用map算子将元素变成键值对
     println(count1.collect().mkString(","))
-    val count2 = count1.reduceByKey { case (x, y) => x + y }
+    val count2 = count1.reduceByKey { case (x, y) => x + y } //case可以去掉，第一个元素加第二个
+//    val count2 = count1.reduceByKey { _ + _ }
     println(count2.collect().mkString(","))
-    //    count.saveAsTextFile("E:\\Program Files\\vm_linux\\share\\aaout2.txt")
+    //    count.saveAsTextFile("E:\\Program Files\\vm_linux\\share\\aaout2.txt") //保存到一个不存在的目录
 
 
     val rdd2 = rdd.flatMap(_.split(" "))
