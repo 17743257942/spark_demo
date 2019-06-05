@@ -5,7 +5,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 object SparkDemo {
   def main(args: Array[String]): Unit = {
-    val logFile = "E:\\Program Files\\vm_linux\\share\\aa.txt"
+//    val logFile = "E:\\Program Files\\vm_linux\\share\\aa.txt"
+    val logFile = this.getClass().getResource("aa.txt").toString.substring(6)
     val conf = new SparkConf()
     conf.setMaster("local[1]")
     conf.setAppName("test0")
