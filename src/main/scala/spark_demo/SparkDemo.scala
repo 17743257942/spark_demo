@@ -75,8 +75,10 @@ object SparkDemo {
 
 
 
-    val rddInt:RDD[Int] = sc.makeRDD(List(1,2,3,4,5,6,2,5,1))
-    val rddStr:RDD[String] = sc.parallelize(Array("a","b","c","d","b","a"), 1)
+//    val rddInt:RDD[Int] = sc.makeRDD(List(1,2,3,4,5,6,2,5,1))
+    val rddInt:RDD[Int] = sc.makeRDD(Array(1,2,3,4,5,6,2,5,1))
+//    val rddStr:RDD[String] = sc.parallelize(Array("a","b","c","d","b","a"), 1)
+    val rddStr:RDD[String] = sc.parallelize(List("a","b","c","d","b","a"), 1)
     val rddFile2:RDD[String] = sc.textFile(logFile, 1)
 
     val rdd01:RDD[Int] = sc.makeRDD(List(1,3,5,3))
@@ -94,19 +96,21 @@ object SparkDemo {
     println("======distinct去重======")
     println(rddInt.distinct().collect().mkString(","))
     println(rddStr.distinct().collect().mkString(","))
-    /* union操作 */
-    println("======union操作======")
+    /* union操作  */
+    println("======union操作 并======")
     println(rdd01.union(rdd02).collect().mkString(","))
     /* intersection操作 */
-    println("======intersection操作======")
+    println("======intersection操作 交======")
     println(rdd01.intersection(rdd02).collect().mkString(","))
     /* subtract操作 */
-    println("======subtract操作======")
+    println("======subtract操作 减======")
     println(rdd01.subtract(rdd02).collect().mkString(","))
     /* cartesian操作 */
-    println("======cartesian操作======")
+    println("======cartesian操作 笛卡尔积======")
     println(rdd01.cartesian(rdd02).collect().mkString(","))
-
+    println()
+    println()
+    println()
 
       // Pair RDD及键值对RDD，Spark里创建Pair RDD也是可以通过两种途径，一种是从内存里读取，一种是从文件读取。
     /**
