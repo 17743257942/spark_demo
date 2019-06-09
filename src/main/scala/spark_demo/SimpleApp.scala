@@ -24,9 +24,11 @@ object SimpleApp {
   private def sessionDemo2 = {
     val logFile = this.getClass().getResource("json.json").toString.substring(6) // Should be some file on your system
     val spark = SparkSession.builder.appName("Simple Application").master("local[1]")
-      .config("spark.testing.memory", "5000000000").getOrCreate()
-    val df = spark.read.json(logFile)
-    df.show()
-
+      .config("spark.testing.memory", "5000000000")
+      .config("spark.some.config.option", "some-value")
+      .getOrCreate()
+    val df = spark.read.format("json").load(logFile)
+    df.printSchema()
+//    df.show()
   }
 }
