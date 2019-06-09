@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b8b6d31-b721-4aa7-b464-e265873a5cb1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkSession.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$$anonfun$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_demo/SparkDemo$.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="205" column="77" selection-start-line="205" selection-start-column="72" selection-end-line="205" selection-end-column="77" />
+            <state relative-caret-position="-78">
+              <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
               <folding>
                 <element signature="e#20#51#0" expanded="true" />
               </folding>
@@ -165,7 +157,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560070742801" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560076023208" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scala_demo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -346,13 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559774693717</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="asdf">
+      <created>1560075073297</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560075073297</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -361,7 +361,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,8 +538,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="205" column="77" selection-start-line="205" selection-start-column="72" selection-end-line="205" selection-end-column="77" />
+        <state relative-caret-position="-78">
+          <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
           <folding>
             <element signature="e#20#51#0" expanded="true" />
           </folding>

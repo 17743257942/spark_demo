@@ -234,7 +234,7 @@ object SparkDemo {
     val resSample1 = rdd2.sample(false, 0.25)
     val resSample2 = rdd2.sample(false, 0.75)
     val resSample3 = rdd2.sample(false, 0.5)
-    println("=====sample======:" + resSample1.collect().mkString(",")) // 无
+    println("=====sample======:" + resSample1.collect().mkString(",")) // (k02,6)
     println("=====sample======:" + resSample2.collect().mkString(",")) // (k01,3),(k02,6),(k01,26)
     println("=====sample======:" + resSample3.collect().mkString(",")) // (k01,3),(k01,26)
 
