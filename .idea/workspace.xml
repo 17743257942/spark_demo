@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6b8b6d31-b721-4aa7-b464-e265873a5cb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,20 +26,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+            <state relative-caret-position="362">
+              <caret line="243" lean-forward="true" selection-start-line="243" selection-end-line="243" />
               <folding>
                 <element signature="e#20#51#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/Program Files/maven_repo/org/apache/spark/spark-core_2.11/2.4.3/spark-core_2.11-2.4.3-sources.jar!/org/apache/spark/rdd/PairRDDFunctions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="610" column="6" selection-start-line="610" selection-start-column="6" selection-end-line="612" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -65,10 +55,10 @@
     <findStrings>
       <find>set</find>
       <find>parallelize</find>
-      <find>rdd2</find>
       <find>rdd02</find>
       <find>flat</find>
       <find>,</find>
+      <find>rdd2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,7 +147,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560076023208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560076092416" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scala_demo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -345,12 +335,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560075073297</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="asdf">
+      <created>1560076044704</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560076044704</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -538,8 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/spark_demo/SparkDemo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+        <state relative-caret-position="362">
+          <caret line="243" lean-forward="true" selection-start-line="243" selection-end-line="243" />
           <folding>
             <element signature="e#20#51#0" expanded="true" />
           </folding>
