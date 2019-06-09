@@ -5,6 +5,12 @@ import org.apache.spark.sql.SparkSession
 object SimpleApp {
 
   def main(args: Array[String]) {
+    sessionDemo2
+
+
+  }
+
+  private def sessionDemo1 = {
     val logFile = this.getClass().getResource("dota.txt").toString.substring(6) // Should be some file on your system
     val spark = SparkSession.builder.appName("Simple Application").master("local[1]")
       .config("spark.testing.memory", "5000000000").getOrCreate()
@@ -13,7 +19,14 @@ object SimpleApp {
     val numBs = logData.filter(line => line.contains("火女")).count()
     println(s"Lines with a: $numAs, Lines with b: $numBs") //Lines with a: 4, Lines with b: 2
     spark.stop()
+  }
 
+  private def sessionDemo2 = {
+    val logFile = this.getClass().getResource("json.json").toString.substring(6) // Should be some file on your system
+    val spark = SparkSession.builder.appName("Simple Application").master("local[1]")
+      .config("spark.testing.memory", "5000000000").getOrCreate()
+    val df = spark.read.json(logFile)
+    df.show()
 
   }
 }
