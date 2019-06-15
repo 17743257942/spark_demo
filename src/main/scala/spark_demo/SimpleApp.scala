@@ -1,17 +1,17 @@
 package spark_demo
 
 import org.apache.spark.sql.SparkSession
-
 object SimpleApp {
 
   def main(args: Array[String]) {
-    sessionDemo1
-    println("===============================================================")
-    sessionDemo2
-    println("===============================================================")
+//    sessionDemo1
+//    println("===============================================================")
+//    sessionDemo2
+//    println("===============================================================")
     sessionDemo3
-    println("===============================================================")
-
+//    println("===============================================================")
+//    sessionDemo4
+//    println("===============================================================")
 
   }
 
@@ -35,8 +35,6 @@ object SimpleApp {
       //      .config("spark.some.config.option", "some-value")
       .getOrCreate()
 
-    //    val df0 = spark.read.format("json").load(logFile)
-    //    df0.show()
 
     /**
       * +----+---+-----------+
@@ -70,13 +68,37 @@ object SimpleApp {
   }
 
   private def sessionDemo3 = {
-    val logFile = this.getClass().getResource("dota.txt").toString.substring(6) // Should be some file on your system
-    val spark = SparkSession.builder.appName("Simple Application").master("local[1]")
+    val logFile = this.getClass().getResource("json.json").toString.substring(6) // Should be some file on your system
+    val spark = SparkSession.builder.appName("Simple Application1").master("local[1]")
       .config("spark.testing.memory", "5000000000").getOrCreate()
-    val logData = spark.read.textFile(logFile).cache()
-    val numAs = logData.filter(line => line.contains("亡灵")).count()
-    val numBs = logData.filter(line => line.contains("火女")).count()
-    println(s"Lines with a: $numAs, Lines with b: $numBs") //Lines with a: 4, Lines with b: 2
-    spark.stop()
+
+
+    val df0 = spark.read.format("json").load(logFile)
+    df0.show()
+    df0.select("name","Education").show()
+    df0.createOrReplaceTempView("json")
+    df0.cache()
+    spark.sql("desc   json ").show()
+    spark.sql("select Education from   json ").show() //对表调用SQL语句
+
+
+
+  }
+
+  import org.apache.spark._
+
+  private def sessionDemo4 = {
+    val logFile = this.getClass().getResource("json.json").toString.substring(6) // Should be some file on your system
+    val conf = new SparkConf()
+    conf.setMaster("local[1]")
+    conf.setAppName("test0")
+    conf.set("spark.testing.memory", "5000000000")
+    val sc = new SparkContext(conf)
+    val rdd = sc.textFile(logFile)
+    println(rdd.collect().mkString(","))
+
+
+
+
   }
 }
