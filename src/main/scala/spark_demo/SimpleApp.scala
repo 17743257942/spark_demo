@@ -8,9 +8,9 @@ object SimpleApp {
 //    println("===============================================================")
 //    sessionDemo2
 //    println("===============================================================")
-    sessionDemo3
+//    sessionDemo3
 //    println("===============================================================")
-//    sessionDemo4
+    sessionDemo4
 //    println("===============================================================")
 
   }
@@ -95,6 +95,7 @@ object SimpleApp {
     conf.set("spark.testing.memory", "5000000000")
     val sc = new SparkContext(conf)
     val rdd = sc.textFile(logFile)
+    rdd.take(1).foreach(println)
     println(rdd.collect().mkString(","))
 
 
