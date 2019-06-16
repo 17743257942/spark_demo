@@ -3,6 +3,8 @@ package spark_sql
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.types._
 
+import scala.collection.mutable.ArrayBuffer
+
 /**
   * 转换工具类  输入变输出
   */
@@ -36,9 +38,13 @@ object ConvertUtil {
       val url = splits(1)
       val nums = splits(2).toLong
       val ip = splits(3)
-
+      var typeid0 = ""
       val domain = "http://www.imooc.com/"
-      val typeid0 = url.substring(url.indexOf(domain) + domain.length)
+
+      if (url.indexOf(domain) > -1) {
+        typeid0 = url.substring(url.indexOf(domain) + domain.length)
+      }
+
       val typeid = typeid0.split("/")
       var type1 = ""
       var id = 0l
