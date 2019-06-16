@@ -95,7 +95,8 @@ object SimpleApp {
     conf.set("spark.testing.memory", "5000000000")
     val sc = new SparkContext(conf)
     val rdd = sc.textFile(logFile)
-    rdd.take(1).foreach(println)
+    rdd.take(3).foreach(println)
+    println("====")
     println(rdd.collect().mkString(","))
 
 
