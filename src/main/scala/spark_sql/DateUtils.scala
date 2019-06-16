@@ -1,14 +1,15 @@
 package spark_sql
 
-import java.text.SimpleDateFormat
 import java.util.{Date, Locale}
+
+import org.apache.commons.lang3.time.FastDateFormat
 
 
 object DateUtils {
 
 
-  val Z_TIME_FORMAT = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss Z", Locale.ENGLISH)
-  val TARGET_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+  val Z_TIME_FORMAT = FastDateFormat.getInstance("dd/MMM/yyyy:HH:mm:ss Z", Locale.ENGLISH)
+  val TARGET_FORMAT = FastDateFormat.getInstance("yyyy-MM-dd HH:mm:ss")
 
   //  [10/Nov/2016:00:01:02 +0800] ==> yyyy-MM-dd HH:mm:ss
   def parse(time: String) = {
@@ -28,9 +29,9 @@ object DateUtils {
     }
   }
 
-//  def main(args: Array[String]): Unit = {
-//    println(parse("[10/Nov/2016:00:01:02 +0800]"))
-//  }
+  def main(args: Array[String]): Unit = {
+    println(parse("[10/Nov/2016:00:01:02 +0800]"))
+  }
 
 
 }
