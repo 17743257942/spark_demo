@@ -1,0 +1,2 @@
+196.168.1.1 - - [10/Nov/2016:00:01:02 +0800] "POST /api3/getadv HTTP/1.1" "http://www.imooc.com/code/1852" 1561
+196.168.1.2 - - [10/Nov/2016:00:01:03 +0800] "POST /api3/getadv HTTP/1.1" "-" 99
